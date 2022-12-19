@@ -46,20 +46,21 @@ console.log(maxValue, minValue);
 
 
 //--------------------------------------------------------//
-//ex4 with ""
+//ex4 with "reduce"
 const sumValArray = someArr.reduce((sum, e) => sum + e)
 console.log(sumValArray);
 
 //--------------------------------------------------------//
-//ex5 with ""
-
+//ex5 with "filter"
+const isOddValueArr = someArr.filter(e => e % 2 != 0).length != 0
+console.log(isOddValueArr);
 
 
 
 
 
 /*
-advantages : 
+advantages with MAP / FILTER / REDUCE : 
     - Using new variable, so don't modify the first array
     - Do not using an itermediary variable (i.e : let = i...)
     - Solved in 1 line
