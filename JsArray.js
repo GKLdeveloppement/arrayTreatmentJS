@@ -24,6 +24,7 @@ Basically, in all your project you're gonna be face off with some arrays treatme
 //variables
 const someArr = [1, 2, 3, 4, 5];
 
+//--------------------------------------------------------//
 //ex1 with "map" : 
 const doubleArr = someArr.map(e => e * 2);
 console.log(doubleArr); //Test it !
@@ -32,6 +33,31 @@ console.log(doubleArr); //Test it !
 advantages : 
     - Using new variable, so don't modify the first array
     - Do not using an itermediary variable (i.e : let = i...)
-    - Solve in 1 line
+    - Solved in 1 line
 */
 
+//--------------------------------------------------------//
+//ex2 with "filter"
+const evenArr = someArr.filter(e => e % 2 == 0)
+const oddArr  = someArr.filter(e => e % 2 != 0)
+console.log(evenArr, oddArr);
+
+/*
+advantages : 
+    - Using new variable, so don't modify the first array
+    - Do not using an itermediary variable (i.e : let = i...)
+    - Solved in 1 line
+*/
+
+//--------------------------------------------------------//
+//ex3 with ""
+
+
+
+//--------------------------------------------------------//
+//ex4 with ""
+
+
+
+//--------------------------------------------------------//
+//ex5 with ""
