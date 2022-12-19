@@ -29,12 +29,6 @@ const someArr = [1, 2, 3, 4, 5];
 const doubleArr = someArr.map(e => e * 2);
 console.log(doubleArr); //Test it !
 
-/*
-advantages : 
-    - Using new variable, so don't modify the first array
-    - Do not using an itermediary variable (i.e : let = i...)
-    - Solved in 1 line
-*/
 
 //--------------------------------------------------------//
 //ex2 with "filter"
@@ -42,22 +36,31 @@ const evenArr = someArr.filter(e => e % 2 == 0)
 const oddArr  = someArr.filter(e => e % 2 != 0)
 console.log(evenArr, oddArr);
 
+
+//--------------------------------------------------------//
+//ex3 with "reduce"
+//tip : rename the accumulator (first arg of reduce) with the name of what you need (here the max value of array for example), is clearly readable
+const maxValue = someArr.reduce((max, e) => Math.max(max, e))
+const minValue = someArr.reduce((min, e) => Math.min(min, e))
+console.log(maxValue, minValue);
+
+
+//--------------------------------------------------------//
+//ex4 with ""
+const sumValArray = someArr.reduce((sum, e) => sum + e)
+console.log(sumValArray);
+
+//--------------------------------------------------------//
+//ex5 with ""
+
+
+
+
+
+
 /*
 advantages : 
     - Using new variable, so don't modify the first array
     - Do not using an itermediary variable (i.e : let = i...)
     - Solved in 1 line
 */
-
-//--------------------------------------------------------//
-//ex3 with ""
-
-
-
-//--------------------------------------------------------//
-//ex4 with ""
-
-
-
-//--------------------------------------------------------//
-//ex5 with ""
