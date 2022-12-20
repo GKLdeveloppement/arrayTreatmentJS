@@ -56,9 +56,6 @@ const isOddValueArr = someArr.filter(e => e % 2 != 0).length != 0
 console.log(isOddValueArr);
 
 
-
-
-
 /*
 advantages with MAP / FILTER / REDUCE : 
     - Using new variable, so don't modify the first array
